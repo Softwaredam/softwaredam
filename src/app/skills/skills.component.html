@@ -1,0 +1,32 @@
+<div class="container grey lighten-3 z-depth-0">
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">face</i>Soft skills</div>
+      <div class="collapsible-body">
+        <div class="row">
+          <div *ngFor="let skill of softSkills">
+            <div class="col s8 l3"><span>{{ skill.name }}</span></div>
+            <div class="col s4 l3">
+              <i class="tiny material-icons" *ngFor="let star of skill.stars">{{star}}</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons">settings</i>Hard skills</div>
+      <div class="collapsible-body">
+        <div class="row">
+          <div *ngFor="let skill of hardSkills">
+            <div class="col s8 l3"><span>{{ skill.name }}</span></div>
+            <div class="col s4 l3">
+              <i class="tiny material-icons" *ngFor="let star of skill.stars">{{star}}</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
