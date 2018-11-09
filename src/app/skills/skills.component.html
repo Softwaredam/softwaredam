@@ -6,8 +6,8 @@
       <div class="collapsible-body">
         <div class="row">
           <div *ngFor="let skill of softSkills">
-            <div class="col s8 l3"><span>{{ skill.name }}</span></div>
-            <div class="col s4 l3">
+            <div class="col s7 l3"><span>{{ skill.name }}</span></div>
+            <div class="col s5 l3">
               <i class="tiny material-icons" *ngFor="let star of skill.stars">{{star}}</i>
             </div>
           </div>
@@ -20,8 +20,8 @@
       <div class="collapsible-body">
         <div class="row">
           <div *ngFor="let skill of hardSkills">
-            <div class="col s8 l3"><span>{{ skill.name }}</span></div>
-            <div class="col s4 l3">
+            <div class="col s7 l3"><span>{{ skill.name }}</span></div>
+            <div class="col s5 l3">
               <i class="tiny material-icons" *ngFor="let star of skill.stars">{{star}}</i>
             </div>
           </div>
