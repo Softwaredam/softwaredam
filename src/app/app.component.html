@@ -45,7 +45,20 @@
   </p>
 </div>
 
+
 <app-skills></app-skills>
 <app-info></app-info>
+
+<div class="hide-on-med-and-up">
+  <div class="container">
+    <div class="fixed-action-btn">
+      <a class="btn-floating blue" (click)="scrollToTop()">
+        <i class="large material-icons">arrow_drop_up</i>
+      </a>
+    </div>
+  </div>
+</div>
+
 <app-footer></app-footer>
+
 <router-outlet></router-outlet>
