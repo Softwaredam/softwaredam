@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Skill } from './skill'
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -38,11 +39,15 @@ export class SkillsService {
 
   constructor() { }
 
-  getSoftSkills(): Skill[] {
-    return this.SOFT;
+  getSoftSkills(): Observable<Skill[]> {
+    return of(this.SOFT);
   }
 
-  getHardSkills(): Skill[] {
-    return this.HARD;
+  getHardSkills(): Observable<Skill[]> {
+    return of(this.HARD);
+  }
+
+  addNewSkill(newSkill: Skill) {
+    this.HARD.push({name: newSkill.name, stars: newSkill.stars});
   }
 }

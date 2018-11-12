@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { InfoComponent } from './info/info.component';
+import { FormsModule } from '@angular/forms';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     SkillsComponent,
-    InfoComponent
+    InfoComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
