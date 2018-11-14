@@ -8,6 +8,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { InfoComponent } from './info/info.component';
 import { FormsModule } from '@angular/forms';
 import { SkillComponent } from './skill/skill.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SkillComponent } from './skill/skill.component';
     FooterComponent,
     SkillsComponent,
     InfoComponent,
-    SkillComponent
+    SkillComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

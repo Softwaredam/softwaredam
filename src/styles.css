@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/** #424242 === grey darken-3 */
+body {
+  color: #424242;
+}
+
+a {
+  color: #424242;
+}
+
+i {
+  color: #424242;
+}

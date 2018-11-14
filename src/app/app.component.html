@@ -1,8 +1,32 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper z-depth-0 white">
+      <div class=" z-depth-0">
 
-<div class="row container z-depth-1">
+        <ul class="left hide-on-med-and-up">
+          <li><a routerLink="/home"><i class="material-icons">home</i></a></li>
+          <li><a routerLink="/portfolio"><i class="material-icons">work</i></a></li>
+          <li><a routerLink="/education"><i class="material-icons">school</i></a></li>
+        </ul>
+
+        <ul class="left hide-on-small-only">
+          <li><a routerLink="/home"><i class="material-icons">home</i></a></li>
+          <li><a class="grey-text text-darken-3" routerLink="/portfolio">Portfolio</a></li>
+          <li><a class="grey-text text-darken-3" routerLink="/education">Education</a></li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="row container z-depth-0">
 
   <div class="col s4 offset-s4 m2 offset-m5" style="margin-bottom:20px">
-    <img src="assets/images/profile_pic.jpg" width="100%" class="z-depth-2 circle right responsive-img" alt="Yosuf Haydary">
+    <img  src="assets/images/profile_pic.jpg"
+          width="100%"
+          class="z-depth-2 circle right responsive-img"
+          alt="Yosuf Haydary">
   </div>
 
   <div class="col s12 m8 offset-m2">
@@ -28,28 +52,6 @@
   </div>
 </div>
 
-
-<div class="row container z-depth-0">
-  <div class="col s12">
-    <p>
-      Along with other things in life, software has become one of those essential things we can hardly live without. Software is literally everywhere, and it continues to grow.
-    </p>
-    <p>
-      Softwaredam is specialized in software building and maintenance, and is determined to help you with your business software systems.
-    </p>
-  </div>
-  <p class="center">
-    <i class="tiny material-icons">brush</i>
-    <i class="tiny blue-grey-text material-icons">favorite</i>
-    <i class="tiny material-icons">build</i>
-  </p>
-</div>
-
-
-<app-skills></app-skills>
-<app-skill></app-skill>
-<app-info></app-info>
-
 <div class="hide-on-med-and-up">
   <div class="container">
     <div class="fixed-action-btn">
@@ -60,6 +62,6 @@
   </div>
 </div>
 
-<app-footer></app-footer>
-
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
