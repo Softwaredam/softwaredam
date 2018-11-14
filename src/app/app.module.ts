@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { SkillComponent } from './skill/skill.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     InfoComponent,
     SkillComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
