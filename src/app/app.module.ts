@@ -11,6 +11,7 @@ import { SkillComponent } from './skill/skill.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SocialComponent } from './social/social.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SocialComponent } from './social/social.component';
     SkillComponent,
     HomeComponent,
     PageNotFoundComponent,
-    SocialComponent
+    SocialComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
