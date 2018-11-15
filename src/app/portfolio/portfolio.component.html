@@ -1,33 +1,50 @@
 <h3 class="center-align">Portfolio</h3>
 
-<!-- <div class="row" >
+<div class="container">
+  <table>
+    <thead>
+      <tr><th>Projects</th></tr>
+    </thead>
 
-  <div class="col s12 m6" *ngFor="let project of PROJECTS">
-    <div class="z-depth-1">
-      <h5>{{project.name}}</h5>
-      <p>{{project.description}}</p>
-    </div>
-  </div>
+    <tbody>
+      <tr *ngFor="let project of PROJECTS" >
+        <td>
 
-</div> -->
+          <div class="contentz">
 
+            <div class="row">
 
-<ul class="collection">
-  <li class="collection-item avatar">
-    <img src="images/yuna.jpg" alt="" class="circle">
-    <span class="title">Title</span>
-    <p>First Line <br>
-       Second Line
-    </p>
-    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-  </li>
+              <div class="col s12 m6">
+                <div class="left-align">
+                  <div class="chip">
+                    <img src="assets/images/{{project.thumbtail}}" alt="Project">
+                    {{project.name}} @{{project.customer}}
+                  </div>
+                </div>
+              </div>
 
-  <li class="collection-item avatar" *ngFor="let project of PROJECTS">
-    <!-- <i class="material-icons circle">folder</i> -->
-    <img src="assets/images/{{project.image}}" alt="" class="circle">
-    <span class="title">{{project.name}}</span>
-    <p>{{project.description}}</p>
-    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-  </li>
+              <div class="col s12 m6 grey-text text-darken-2 right-align">
+                {{project.start}} - {{project.end}}
+              </div>
 
-</ul>
+            </div>
+
+            <p>{{project.description | slice:0:130 }} ...</p>
+
+            <div class="">
+              <img src="assets/images/{{project.image}}" alt="Contact Person" class="responsive-img">
+              <p class="grey-text center-align">
+                {{project.imageCaption}}
+              </p>
+            </div>
+
+            <p>Tools: {{project.tools | slice:0:5}} ...</p>
+            <p>Roles: {{ project.roles }}</p>
+
+          </div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

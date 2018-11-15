@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from 'materialize-css/dist/js/materialize.min.js'
 
 @Component({
   selector: 'app-portfolio',
@@ -8,15 +7,18 @@ import * as M from 'materialize-css/dist/js/materialize.min.js'
 })
 export class PortfolioComponent implements OnInit {
 
-  test =["","",""];
-  
   PROJECTS = [
     {
       id: 1,
-      name: "Softwaredam.com",
-      customer: "Softwaredam",
-      image: "france3.jpg",
-      description: "Currently looking at, Softwaredam.com is my company's website. I have built it from the scratch using open source projects. The look and feel is inspired by Material Design of Google which is implemented by Materialize CSS. It is backed by Angular 7. Softwaredam.com runs on GitHub Pages and it is licensed under MIT.",
+      name: "Website",
+      customer: "Softwaredam.com",
+      start: "November 2018",
+      end: "present",
+      image: "_MG_0062.jpg",
+      imageCaption: "",
+      thumbtail: "profile_pic.jpg",
+      description: "Currently looking at, Softwaredam.com is my company's website. I have built it from scratch using open source projects. The look and feel is inspired by Material Design of Google which is implemented by Materialize CSS. It is backed by Angular 7. Softwaredam.com runs on GitHub Pages and it is licensed under MIT.",
+      roles: ["Front-end engineer","PO",],
       activities: [
         ""
       ],
@@ -29,44 +31,18 @@ export class PortfolioComponent implements OnInit {
       id: 2,
       name: "SBG++",
       customer: "ProRail",
+      start: "2011",
+      end: "2013",
       image: "sbg.jpeg",
+      imageCaption: "SBG++ team during a daily stand-up. Image copyright Nico Ouburg.",
+      thumbtail: "sbg_thumbtail.png",
       description: "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers. SBG++ is a sophisticated, and yet simple intuitive desktop application.",
-      role: "Medior Java Software Engineer",
+      roles: ["Medior Java Software Engineer",],
       activities: [
         ""
       ],
       tools: [
-        "Java", "Maven", "Jenkins", "Junit"
-      ],
-    },
-
-    {
-      id: 1,
-      name: "SBG++",
-      customer: "ProRail",
-      image: "sbg.jpeg",
-      description: "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers. SBG++ is a sophisticated, and yet simple intuitive desktop application.",
-      role: "Medior Java Software Engineer",
-      activities: [
-        ""
-      ],
-      tools: [
-        "Java", "Maven", "Jenkins", "Junit"
-      ],
-    },
-
-    {
-      id: 1,
-      name: "SBG++",
-      customer: "ProRail",
-      image: "sbg.jpeg",
-      description: "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers. SBG++ is a sophisticated, and yet simple intuitive desktop application.",
-      role: "Medior Java Software Engineer",
-      activities: [
-        ""
-      ],
-      tools: [
-        "Java", "Maven", "Jenkins", "Junit"
+        "Java SE/EE","JavaFX 1.3/2.0", "Maven", "Jenkins", "Junit"
       ],
     },
 
@@ -74,9 +50,7 @@ export class PortfolioComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, {});
+  ngOnInit(){
   }
 
 }
