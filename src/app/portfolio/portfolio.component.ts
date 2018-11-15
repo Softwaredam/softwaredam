@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
       customer: "Softwaredam.com",
       start: "November 2018",
       end: "present",
-      image: "_MG_0062.jpg",
+      image: "stonesbackground.jpg",
       imageCaption: "",
       thumbtail: "profile_pic.jpg",
       description: "Currently looking at, Softwaredam.com is my company's website. I have built it from scratch using open source projects. The look and feel is inspired by Material Design of Google which is implemented by Materialize CSS. It is backed by Angular 7. Softwaredam.com runs on GitHub Pages and it is licensed under MIT.",

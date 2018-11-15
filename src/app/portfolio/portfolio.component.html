@@ -17,7 +17,7 @@
               <div class="col s12 m6">
                 <div class="left-align">
                   <div class="chip">
-                    <img src="assets/images/{{project.thumbtail}}" alt="Project">
+                    <img src="assets/images/{{project.thumbtail}}" alt="{{project.name}}">
                     {{project.name}} @{{project.customer}}
                   </div>
                 </div>
@@ -32,7 +32,7 @@
             <p>{{project.description | slice:0:130 }} ...</p>
 
             <div class="">
-              <img src="assets/images/{{project.image}}" alt="Contact Person" class="responsive-img">
+              <img src="assets/images/{{project.image}}" alt="{{project.name}}" class="responsive-img">
               <p class="grey-text center-align">
                 {{project.imageCaption}}
               </p>
