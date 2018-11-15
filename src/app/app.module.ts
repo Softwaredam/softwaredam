@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SocialComponent } from './social/social.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SoftwaredamIntroComponent } from './softwaredam-intro/softwaredam-intro.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     PageNotFoundComponent,
     SocialComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SoftwaredamIntroComponent
   ],
   imports: [
     BrowserModule,
