@@ -13,6 +13,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SocialComponent } from './social/social.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SoftwaredamIntroComponent } from './softwaredam-intro/softwaredam-intro.component';
+import { ProjectComponent } from './portfolio/project/project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SoftwaredamIntroComponent } from './softwaredam-intro/softwaredam-intro
     PageNotFoundComponent,
     SocialComponent,
     PortfolioComponent,
-    SoftwaredamIntroComponent
+    SoftwaredamIntroComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
