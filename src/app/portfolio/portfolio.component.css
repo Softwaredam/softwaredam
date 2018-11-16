@@ -1,0 +1,10 @@
+#box {
+  border: 0.00em solid grey;
+  padding: 2.5%;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 13px;
+  color: grey;
+}

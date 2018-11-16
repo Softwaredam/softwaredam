@@ -28,7 +28,7 @@ export class SkillsService {
     {"name":"Agility",
      "stars": ["star","star","star","star","star_half"] },
     {"name":"Motivating/Inspiring teams",
-     "stars": ["star","star","star","star_half","star"] },
+     "stars": ["star","star","star","star","star"] },
     {"name":"Taking ownership",
      "stars": ["star","star","star","star","star"] },
     {"name":"Communication",
