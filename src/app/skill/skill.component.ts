@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'materialize-css/dist/js/materialize.min.js'
-import { SkillsService } from '../skills.service';
-import { Skill } from '../skill';
+import { SkillsService } from '../services/skills.service';
+import { Skill } from '../model/skill';
 
 @Component({
   selector: 'app-skill',

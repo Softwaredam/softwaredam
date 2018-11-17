@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Skill } from './skill'
+import { Skill } from '../model/skill'
 import { Observable, of } from 'rxjs';
 
 @Injectable({

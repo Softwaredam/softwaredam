@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from 'materialize-css/dist/js/materialize.min.js'
+import { ActivatedRoute } from '@angular/router';
+import { Project } from '../../model/project';
+import { ProjectService } from '../../services/project.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-project',
@@ -8,11 +11,17 @@ import * as M from 'materialize-css/dist/js/materialize.min.js'
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  project: Project;
+
+  constructor(private activatedRoute:ActivatedRoute, private projectService: ProjectService, private location: Location) { }
 
   ngOnInit() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {});
+    let projectKey = this.activatedRoute.snapshot.paramMap.get('projectKey');
+    this.project = this.projectService.getProject(projectKey);
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }

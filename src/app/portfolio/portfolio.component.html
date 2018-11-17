@@ -1,7 +1,6 @@
-<h3 class="center-align">Portfolio</h3>
+<h4 class="center-align">Portfolio</h4>
 
-
-<div class="container z-depth-1" *ngFor="let project of PROJECTS" id="box">
+<div class="box container z-depth-1" *ngFor="let project of projects" (click)="browseProject(project)">
 
   <div class="row">
     <div class="col s12 m6">
@@ -19,31 +18,16 @@
     </div>
   </div>
 
-  <p id="description">
-    {{project.description | slice:0:130 }} ...
-  </p>
+  <p class="grey-p"> {{project.description[0] | slice:0:130 }} ... </p>
 
-  <div class="">
-    <img src="{{project.image}}" alt="{{project.name}}" class="responsive-img">
-    <p id="description" class="center-align">
-      {{project.imageCaption}}
-    </p>
+  <img src="{{project.image}}" alt="{{project.name}}" class="responsive-img">
+
+  <p class="grey-p"> Roles, tools, activities, ... </p>
+
+  <div class="right-align" style="padding-top: 20px">
+    <a class="btn-floating btn waves-light blue" (click)="browseProject(project)">
+      <i class="material-icons">more_horiz</i>
+    </a>
   </div>
 
-  <div class="row">
-    <div class="col s9">
-      <p id="description">
-        Tools:  <span class="grey-text"> {{project.tools | slice:0:5}} </span> <br/>
-        Roles: <span class="grey-text">{{ project.roles }} </span>
-      </p>
-    </div>
-
-    <app-project></app-project>
-    <div class="col s3 right-align" style="padding-top: 20px">
-      <a class="btn-floating btn waves-light blue modal-trigger" href="#projectModal">
-        <i class="material-icons">more_horiz</i>
-      </a>
-    </div>
-
-  </div>
 </div>
