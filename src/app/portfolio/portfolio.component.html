@@ -1,4 +1,7 @@
-<h4 class="center-align">Portfolio</h4>
+<div class="center-align">
+  <h4>Portfolio</h4>
+  <h6>Projects selection</h6>
+</div>
 
 <div class="box container z-depth-1" *ngFor="let project of projects" (click)="browseProject(project)">
 
@@ -20,9 +23,15 @@
 
   <p class="grey-p"> {{project.description[0] | slice:0:130 }} ... </p>
 
-  <img src="{{project.image}}" alt="{{project.name}}" class="responsive-img">
+  <div class="center-align">
+    <img src="{{project.image}}" alt="{{project.name}}" class="responsive-img">
+  </div>
 
-  <p class="grey-p"> Roles, tools, activities, ... </p>
+  <p class="grey-p">
+    {{project.roles[0]}},
+    {{project.tools[0]}},
+    {{project.activities[0]}},
+    , ... </p>
 
   <div class="right-align" style="padding-top: 20px">
     <a class="btn-floating btn waves-light blue" (click)="browseProject(project)">

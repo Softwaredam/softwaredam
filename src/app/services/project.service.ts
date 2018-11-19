@@ -9,7 +9,7 @@ export class ProjectService {
 
   PROJECTS: Project[] = [
     {
-      id: 1,
+      id: 3,
       key: "softwaredam",
       name: "Softwaredam.com",
       customer: "Softwaredam",
@@ -35,6 +35,29 @@ export class ProjectService {
 
     {
       id: 2,
+      key: "wlis",
+      name: "WLIS",
+      customer: "ProRail",
+      start: "September 2017",
+      end: "October 2018",
+      image: "assets/images/wlis.png",
+      imageCaption: "Image copyright 2018 @ ProRail.",
+      thumbtail: "assets/images/wlis_thumbtail.png",
+      description: [
+        "WLIS is ProRail's new information system for Cargo Trains and Wagons. It is responsible for keeping the overview of the cargo train which drive or stand still on Dutch rails. This system is used by ProRail and its carrier partners.",
+        "The WlIS back-end is built in Java 8 and Spring Boot. The front-end is built in ReactJS, Typescript and Material UI."
+      ],
+      roles: ["Technical Lead", "Scrum-master", "Solution Architect", "CI/CD specialist" ],
+      activities: [
+        "Customer communication", "Partnering with ProRail to choose a fit strategy", "Leading the scrum process intern/extern", "Coaching and helping the dev-team",
+      ],
+      tools: [
+        "Java 8", "Spring boot", "REST", "JBoss", "React", "Materialize-UI", "CI/CD", "Typescript", "Jenkins", "Maven", "EMS", "..."
+      ],
+    },
+
+    {
+      id: 1,
       key: "sbg",
       name: "SBG++",
       customer: "ProRail",
@@ -47,12 +70,39 @@ export class ProjectService {
         "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers.",
         "SBG++ is a sophisticated, and yet simple intuitive desktop application."
       ],
-      roles: ["Mainly medior Java Software Engineer", "Quality analist"],
+      roles: ["Medior Java Software Engineer", "Quality analist"],
       activities: [
         "Implemting and testing user stories", "Helping with design of the UI", "Taking part in all activiteis of the scrum team"
       ],
       tools: [
         "Java SE/EE","JavaFX 1.3/2.0", "Maven", "Jenkins", "Junit", "WSDL", "XML", "SOAP", "SIG (Software Improvement Group)",
+      ],
+    },
+
+    {
+      id: 0,
+      key: "thirdeye",
+      name: "The Third Eye Robot",
+      customer: "WebChair",
+      start: "2010",
+      end: "2011",
+      image: "assets/images/3di-3.png",
+      imageCaption: "The Third Eye Robot during one of the expositions. Image copyright grahamthomassmith.com",
+      thumbtail: "assets/images/thirdeye_thumbtail.jpeg",
+      description: [
+        "The Third Eye (TTE) Robot is a remote controlled robot which makes it possible for the users to remotely visit expositions.",
+        "TTE Robot concept is part of Graham Smith's art and concept.",
+        "In my role as software developer I created a system which consisted of 4 applications. The user application runs on the user's machine and connects with the Robot driver app through the Skype API. The user can see through the robot's HD webcam, drive the robot and see on a map what the location of the robot is. The Robot appilcation runs on a Mac-mini on the robot and controls the motors through an arduino, the RFID reader and the camera. The arduino application is responsible for accepting and translating the user commands into the right steps on the motor. A back-end application written in PHP is responsible for inital handshake between the user and the robot and also makes sure the FIFO principle.",
+      ],
+      roles: [ "Java Software Developer", "Junior hardware engineer" ],
+      activities: [
+        "Implementing requirements",
+        "Implementing the front-end designed by an expert",
+        "Gathering hadware requirements",
+        "Choosing hardware components and assembling them"
+      ],
+      tools: [
+        "Java", "Swing", "Skype API", "PHP", "MySQL", "Arduino", "RFID", "Hardware", "Mac Mini",
       ],
     },
 
