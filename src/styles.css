@@ -12,7 +12,8 @@ i {
 }
 
 .box {
-  padding: 2.5%;
+  border: solid lightgrey 1px;
+  padding: 2%;
   margin-bottom: 20px;
 }
 

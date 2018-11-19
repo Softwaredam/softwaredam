@@ -1,9 +1,9 @@
-<div class="center-align">
-  <h4>Portfolio</h4>
-  <h6>Projects selection</h6>
+<div class="container">
+  <h4 class="center-align" >Portfolio</h4>
 </div>
 
-<div class="box container z-depth-1" *ngFor="let project of projects" (click)="browseProject(project)">
+
+<div class="box container" *ngFor="let project of projects" (click)="browseProject(project)">
 
   <div class="row">
     <div class="col s12 m6">
@@ -31,7 +31,7 @@
     {{project.roles[0]}},
     {{project.tools[0]}},
     {{project.activities[0]}},
-    , ... </p>
+    ... </p>
 
   <div class="right-align" style="padding-top: 20px">
     <a class="btn-floating btn waves-light blue" (click)="browseProject(project)">

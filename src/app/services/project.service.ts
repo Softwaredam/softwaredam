@@ -42,7 +42,7 @@ export class ProjectService {
       end: "October 2018",
       image: "assets/images/wlis.png",
       imageCaption: "Image copyright 2018 @ ProRail.",
-      thumbtail: "assets/images/wlis_thumbtail.png",
+      thumbtail: "assets/images/prorail_logo.png",
       description: [
         "WLIS is ProRail's new information system for Cargo Trains and Wagons. It is responsible for keeping the overview of the cargo train which drive or stand still on Dutch rails. This system is used by ProRail and its carrier partners.",
         "The WlIS back-end is built in Java 8 and Spring Boot. The front-end is built in ReactJS, Typescript and Material UI."
@@ -65,7 +65,7 @@ export class ProjectService {
       end: "2013",
       image: "assets/images/sbg.jpeg",
       imageCaption: "SBG++ team during a daily stand-up. Image copyright Nico Ouburg.",
-      thumbtail: "assets/images/sbg_thumbtail.png",
+      thumbtail: "assets/images/prorail_logo.png",
       description: [
         "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers.",
         "SBG++ is a sophisticated, and yet simple intuitive desktop application."
