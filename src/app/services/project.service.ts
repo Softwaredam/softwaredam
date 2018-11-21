@@ -15,7 +15,7 @@ export class ProjectService {
       customer: "Softwaredam",
       start: "11/2018",
       end: "present",
-      image: "assets/images/stonesbackground.jpg",
+      image: "assets/images/tools1.jpg",
       imageCaption: "",
       thumbtail: "assets/images/profile_pic.jpg",
       description: [
@@ -40,7 +40,7 @@ export class ProjectService {
       customer: "ProRail",
       start: "09/2017",
       end: "10/2018",
-      image: "assets/images/wlis.png",
+      image: "assets/images/traincars.jpg",
       imageCaption: "Image copyright 2018 @ ProRail.",
       thumbtail: "assets/images/prorail_logo.png",
       description: [
@@ -87,18 +87,24 @@ export class ProjectService {
       customer: "ProRail",
       start: "05/2017",
       end: "12/2017",
-      image: "assets/images/ritc.jpeg",
+      image: "assets/images/rails.jpg",
       imageCaption: "",
       thumbtail: "assets/images/prorail_logo.png",
       description: [
-        ""
+        "RITC is a message driven java backend component which gathers and distributes rails components information.",
+        "As Technical Lead and Solution Architect I helped the team startup the project and reuse software modules from previous ProRail software."
       ],
       roles: [ "Technical Lead", "Solution Architect", "Senior Software Engineer" ],
       activities: [
-        ""
+        "Cusotmer communication",
+        "Architectural descisions",
+        "Changes evaluation",
+        "Coaching the team",
+        "Implementing features",
+        "Backlog maintenance",
       ],
       tools: [
-        "Java EE", "JMS", "WebLogic 12c", "Singleton-service", "XSD", "Jaxb", "Red Hat", "RHEL 6", "CentOS", "Maven", "Jenkins", "Pipelines", "GitLab", "Slack"
+        "Java EE", "JMS", "WebLogic 12c", "Singleton-service", "XSD", "Jaxb", "Red Hat", "RHEL 6", "CentOS", "RPM", "Maven", "Jenkins", "Pipelines", "GitLab", "Slack"
       ],
     },
 
@@ -110,7 +116,7 @@ export class ProjectService {
       customer: "ProRail",
       start: "11/2015",
       end: "06/2017",
-      image: "assets/images/isvl.jpeg",
+      image: "assets/images/website.jpg",
       imageCaption: "",
       thumbtail: "assets/images/prorail_logo.png",
       description: [
@@ -124,7 +130,8 @@ export class ProjectService {
         "Solve major performance issues",
         "Changes evaluation",
         "Coaching the team",
-        "Implementing features"
+        "Implementing features",
+        "Backlog maintenance"
       ],
       tools: [
         "Java 6/8", "WebLogic", "11c" ,"12g", "Spring", "Hibernate", "Vaadin 7", "Icepush", "Jaxb", "JMS", "Sprintboot", "REST", "Team stabalization" , "Automatic regression tests", "load test", "Vaadin Testbench", "PhantomJS", "WSDL", "SOAP", "XML", "Maven", "Jenkins", "Nexus", "Sonar", "CQA"
@@ -138,7 +145,7 @@ export class ProjectService {
       customer: "ProRail",
       start: "09/2014",
       end: "06/2015",
-      image: "assets/images/tpsmcs.jpeg",
+      image: "assets/images/treinspoor.jpg",
       imageCaption: "",
       thumbtail: "assets/images/prorail_logo.png",
       description: [
@@ -165,8 +172,8 @@ export class ProjectService {
       customer: "CGI",
       start: "05/2018",
       end: "10/2018",
-      image: "assets/images/dev_at_cgi.jpeg",
-      imageCaption: "",
+      image: "assets/images/devcgi.png",
+      imageCaption: "Dr. Felienne Hermans during the opening of Dev@CGI community.",
       thumbtail: "assets/images/cgi_logo.png",
       description: [
         "Dev@CGI is a community for developers in CGI NL. As part of the core team and later on head of the Dev@CGI community I organized workshops and external speakers sessions for the developers. I also formed an interface to the management."
@@ -190,7 +197,7 @@ export class ProjectService {
       customer: "CGI",
       start: "06/2014",
       end: "10/2018",
-      image: "assets/images/CICD.jpeg",
+      image: "assets/images/cogwheels.jpg",
       imageCaption: "",
       thumbtail: "assets/images/cgi_logo.png",
       description: [
@@ -214,16 +221,15 @@ export class ProjectService {
       customer: "NS",
       start: "06/2015",
       end: "11/2015",
-      image: "assets/images/mediations.png",
+      image: "assets/images/puzzle.jpg",
       imageCaption: "",
       thumbtail: "assets/images/ns_logo.png",
       description: [
-        "SBG++ is a mission-critical application which shows the overview of trains and rails occupation. It is used by the Dutch train dispatchers.",
-        "SBG++ is a sophisticated, and yet simple intuitive desktop application."
+        "As a middlware software engineer I and 2 other colleagues built a mediations factory which produced mediations/adapters for integrating applications on Websphere ESB server."
       ],
       roles: ["Senior Software Engineer"],
       activities: [
-        ""
+        "Set up a new Dev & Test stack"
       ],
       tools: [
         "Java EE", "JMS", "SOAP", "XSD", "WSDL", "Red Hat (RHEL 6)", "CentOS", "Websphere ESB Server", "Websphere Intergration Designer", "Maven", "Jenkins"
@@ -237,7 +243,7 @@ export class ProjectService {
       customer: "PZH",
       start: "06/2011",
       end: "08/2011",
-      image: "assets/images/leidschendam.jpeg",
+      image: "assets/images/goldengate.jpg",
       imageCaption: "Image: Old part of Leidschendam. South Holland.",
       thumbtail: "assets/images/pzh_logo.jpg",
       description: [
@@ -276,6 +282,8 @@ export class ProjectService {
         "Java SE 5/6", "Swing", "Ibator/Ibatis", "MySQL", "Ant", "IBM Synergy"
       ],
     },
+
+
 
     {
       id: 0,
