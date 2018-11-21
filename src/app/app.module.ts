@@ -15,6 +15,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SoftwaredamIntroComponent } from './softwaredam-intro/softwaredam-intro.component';
 import { ProjectComponent } from './portfolio/project/project.component';
 import { EducationComponent } from './education/education.component';
+import { ToolboxComponent } from './toolbox/toolbox.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EducationComponent } from './education/education.component';
     PortfolioComponent,
     SoftwaredamIntroComponent,
     ProjectComponent,
-    EducationComponent
+    EducationComponent,
+    ToolboxComponent
   ],
   imports: [
     BrowserModule,
