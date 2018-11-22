@@ -96,8 +96,8 @@ export class ProjectService {
       ],
       roles: [ "Technical Lead", "Solution Architect", "Senior Software Engineer" ],
       activities: [
-        "Cusotmer communication",
-        "Architectural descisions",
+        "Customer communication",
+        "Architectural decisions",
         "Changes evaluation",
         "Coaching the team",
         "Implementing features",
@@ -125,8 +125,8 @@ export class ProjectService {
       ],
       roles: [ "Technical Lead", "Solution Architect", "Senior Software Engineer" ],
       activities: [
-        "Cusotmer communication",
-        "Architectural descisions",
+        "Customer communication",
+        "Architectural decisions",
         "Solve major performance issues",
         "Changes evaluation",
         "Coaching the team",
@@ -244,7 +244,7 @@ export class ProjectService {
       start: "06/2011",
       end: "08/2011",
       image: "assets/images/goldengate.jpg",
-      imageCaption: "Image: Old part of Leidschendam. South Holland.",
+      imageCaption: "",
       thumbtail: "assets/images/pzh_logo.jpg",
       description: [
         "TCS Bruggen is the Transport Control System which is used by coordinators and dispatchers to remotely open and close the bridges of the South-Holland province.",
