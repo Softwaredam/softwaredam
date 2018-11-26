@@ -1,0 +1,16 @@
+.lowerimage {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 1px solid lightgrey;
+  background: white;
+}
+.upperimage {
+  background: white;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  border: 1px solid lightgrey;
+  z-index: 2;
+}

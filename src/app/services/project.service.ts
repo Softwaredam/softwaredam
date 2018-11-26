@@ -327,4 +327,8 @@ export class ProjectService {
   getProject(key: String): Project {
     return this.PROJECTS.find(p => p.key === key);
   }
+
+  getNumberOfProjects(): number {
+    return this.PROJECTS.length;
+  }
 }

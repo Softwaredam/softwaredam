@@ -1,8 +1,27 @@
 <app-softwaredam-intro></app-softwaredam-intro>
 <app-social></app-social>
 
-<div class="row container z-depth-0">
-  <div class="col s12">
+<div class="row container">
+  <div class="col s12 box">
+    <h6>Highlights</h6>
+
+    <div class="row vertical-align">
+      Customers
+      <div class="col s2" style="position:relative">
+        <img class="responsive-img circle upperimage" width="50px" src="{{projects[3].thumbtail}}" alt="" >
+        <img class="responsive-img circle lowerimage" width="50px" src="{{projects[projects.length-1].thumbtail}}" alt="" >
+      </div>
+      <div class="row s10">
+        <p class="grey-p">
+          {{projects.length}} projects
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container z-depth-0">
     <p>
       Along with other things in life, software has become one of those essential things we can hardly live without. Software is literally everywhere, and it continues to grow.
     </p>
@@ -17,7 +36,6 @@
     <p>
       Please bear with me if you see any incompleteness or inconsistencies in this website. I build it bit by bit and I put any working functionality directly into production, no matter how small.
     </p>
-  </div>
 </div>
 
 <app-skills></app-skills>
