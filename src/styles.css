@@ -24,3 +24,8 @@ i {
   font-size: 13px;
   color: grey;
 }
+
+.chip{
+   background-color:  white;
+   border:  solid lightgrey 1px;
+}

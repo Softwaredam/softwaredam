@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { Project } from '../model/project'
 
@@ -11,7 +12,7 @@ export class ProjectService {
     {
       id: 3,
       key: "softwaredam",
-      name: "Softwaredam.com",
+      name: "Portfolio App",
       customer: "Softwaredam",
       start: "11/2018",
       end: "present",
@@ -314,7 +315,7 @@ export class ProjectService {
 
   ];
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   getProjects(): Observable<Project[]> {
     return of(this.PROJECTS.sort((a,b) => {
@@ -330,5 +331,9 @@ export class ProjectService {
 
   getNumberOfProjects(): number {
     return this.PROJECTS.length;
+  }
+
+  browseProject(project: Project) {
+    this.router.navigate(['/projects', project.key]);
   }
 }

@@ -13,9 +13,11 @@ export class HomeComponent implements OnInit {
 
   constructor(private projectService:ProjectService) { }
 
-
   ngOnInit() {
     this.projectService.getProjects().subscribe(projects => this.projects = projects);
   }
 
+  browseProject(project: number){
+    this.projectService.browseProject(this.projects[project]);
+  }
 }
