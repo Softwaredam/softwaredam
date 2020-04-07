@@ -11,6 +11,32 @@ export class ProjectService {
   PROJECTS: Project[] = [
     {
       id: 3,
+      key: "movo",
+      name: "MijnOverheid voor Ondernemers",
+      customer: "KvK",
+      start: "11/2018",
+      end: "04/2020",
+      image: "assets/images/criss-cross.jpg",
+      imageCaption: "",
+      thumbtail: "assets/images/rijksoverheid_logo.png",
+      description: [
+        "MijnOverheid voor Ondernemers (MOvO) is een systeem dat allerlei fuctionaliteiten voor de ondernemers biedt dit met overheid zaken doen. ",
+        "MOvO biedt bijvoorbeeld de mogelijkheid om via een assistent de berichten van de ondernemer die in zijn BerichtenBox voor Bedrijven opgeslagen is te laten zien.",
+        "Daarnaast maakt MOvO de KvK HR-data toegankelijk voor de ondernemers.",
+        "Als senior software engineer hielp ik MOvO Java microservices die met legacy systemen aan de achterkant communiceren, te realiseren, testen en op productie brengen.",
+        "Dit deden we met een scrum/agile aanpak gecombineerd met DevOps."
+      ],
+      roles: ["Senior DevOps Software Engineer"],
+      activities: [
+        "DevOps", "CI/CD", "Developing, QA and taking of functionality to production, mainly in the backend", "Integration of microservices"
+      ],
+      tools: [
+        "Kubernetes","Docker", "Harbor", "Azure", "Microservice architecture", "Java", "Java8", "Gradle", "REST", "SOAP", "XML", "Json", "Security", "PKI PKIoverheid", "Oauth2 openid connect", "JWT", "GitLab",
+      ],
+    },
+
+    {
+      id: 56,
       key: "softwaredam",
       name: "Portfolio App",
       customer: "Softwaredam",
