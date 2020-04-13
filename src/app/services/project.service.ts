@@ -10,12 +10,60 @@ export class ProjectService {
 
   PROJECTS: Project[] = [
     {
+      id: 92,
+      key: "dso",
+      name: "Digitaal Stelsel Omgevingswet",
+      customer: "RWS",
+      start: "11/2019",
+      end: "present",
+      image: "assets/images/omgeving_back.jpg",
+      imageCaption: "",
+      thumbtail: "assets/images/logo_omgevingsloket_circle.png",
+      description: [
+        "Currently, I am helping 6 teams, and around 80+ software components to migrate to a new platform. It involves migrating from Docker Swarm to Kubernetes for hosting, and from Bitbucket+Jenkins to GitLab.",
+        "Beside migration I am helping the teams use the full potential of the platform and deliver software with even more quality."
+      ],
+      roles: ["Migration and Integration Architect", "Technical Lead" ],
+      activities: [
+        "Requirements Engineering", "Planning and exection of platform migration from Docker swarm to Kubernetes."
+      ],
+      tools: [
+        "Kubernetes","Docker swarm",  "Harbor", "Jenkins", "GitLab", "PostgreSQL", "Java", "Java8", "Java11", "Maven", "Nginx", "Apache", "Traefik", "Helm", "Ansible", "WSO2AM", "WSO2IS", "Postfix", "..."
+      ],
+    },
+    {
+      id: 57,
+      key: "bvb",
+      name: "Berichten voor Bedrijven",
+      customer: "RVO",
+      start: "04/2019",
+      end: "04/2020",
+      image: "assets/images/criss-cross.jpg",
+      imageCaption: "",
+      thumbtail: "assets/images/rijksoverheid_logo.png",
+      description: [
+        "BvB (Berichten voor Bedrijven) is an API platform which enables RVO (Rijksdienst voor Ondernemend Nederland) to offer its digital services in a modern and secure way. It implements WSO2 API management in combination with 2-way TLS on the front to serve the customers. The API's are offered as REST/Json.",
+        "At its backend, it has has implemented a set of microservices in Java which protects and offers legacy system functionalities such as Berichten voor Bedrijven and KvK's HR-data.",
+        "BvB has implemented its services in a non-blocking fashion, by accepting orders (opdrchten) which are processed at the background, that are then collected at a later time.",
+        "BvB is implemented with NoOps and DevOps concepts in mind. It is fully automated. Features are automatically tested and promoted to different environments like acceptance, pre-production and production. Everything, including configuration, secrets, certificates, keys and so on are handled securely as code.",
+        "BvB resides on the Standard Platform of the Dutch government (Ministerie van Infrastructuur en Waterstaat). It offers a modern platform for developing and hosting of applications. Some of the main blocks are Kubernetes (Openshift), Docker, GitLab, Harbor, and more."
+      ],
+      roles: ["Solution Architect", "Technical Lead" ],
+      activities: [
+        "Agile solution shaping to support DevOps, CI/CD and Continuous Quality", "Requirements Engineering", "Backlog management", "Team management"
+      ],
+      tools: [
+        "Microservice", "Kubernetes","Docker", "Harbor", "WSO2AM", "PostgreSQL", "Java", "Java8", "Java11", "Gradle", "REST", "SOAP", "XML", "Json", "Security", "PKI PKIoverheid", "GitLab",
+      ],
+    },
+
+    {
       id: 3,
       key: "movo",
       name: "MijnOverheid voor Ondernemers",
       customer: "KvK",
       start: "11/2018",
-      end: "04/2020",
+      end: "04/2019",
       image: "assets/images/criss-cross.jpg",
       imageCaption: "",
       thumbtail: "assets/images/rijksoverheid_logo.png",
