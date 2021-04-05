@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from '../../environments/environment'
-
+import gitInfo from '../../environments/git-version.json';
 
 
 @Component({
@@ -10,8 +9,8 @@ import {environment} from '../../environments/environment'
 })
 export class FooterComponent implements OnInit {
   year = new Date().getFullYear();
-  buildTimestamp = environment.buildTimestamp;
-  
+  buildTimestamp = (<any>gitInfo).hash + " - " + (<any>gitInfo).dateTime;
+
   constructor() { }
   ngOnInit() {
   }
