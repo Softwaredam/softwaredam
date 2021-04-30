@@ -30,13 +30,13 @@
 
   <div>
     <p>
-      Roles: <span class="grey-text">{{ project.roles }} </span>
+      Roles: <span class="grey-text">{{ project.roles.join(", ") }} </span>
     </p>
     <p>
-      Tools:  <span class="grey-text"> {{ project.tools }} </span>
+      Tools:  <span class="grey-text"> {{ project.tools.join(", ") }} </span>
     </p>
     <p>
-      Activities: <span class="grey-text">{{ project.activities }} </span>
+      Activities: <span class="grey-text">{{ project.activities.join(", ") }} </span>
     </p>
   </div>
 
