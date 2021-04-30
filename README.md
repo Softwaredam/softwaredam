@@ -10,9 +10,8 @@ It uses [Materialize](https://materializecss.com).
 - browse `http://localhost:4200`
 
 ### Package
-- Upgrade version `node grab-git-info.js` Thanks to https://itnext.io/how-to-add-git-hash-into-your-angular-application-bec20b702bb1
-- Run `ng build --prod --base-href "https://softwaredam.com"` to build the project.
-  - The build artifacts will be stored in the `docs/` directory, becuase github pages serve from this folder.
+- Run `release.sh` to build the project.
+  - The build artifacts will be stored in the `docs/` directory, becuase github pages serves from this folder.
   - See also project settings Github > this project > Settings > Options > GitHub Pages
 
 - Git commit/push (PR/MR)
