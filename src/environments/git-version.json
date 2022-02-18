@@ -1,11 +1,11 @@
 {
-  "dirty": true,
-  "raw": "1369a66-dirty",
-  "hash": "1369a66",
+  "dirty": false,
+  "raw": "b42cd39",
+  "hash": "b42cd39",
   "distance": null,
   "tag": null,
   "semver": null,
-  "suffix": "1369a66-dirty",
+  "suffix": "b42cd39",
   "semverString": null,
-  "dateTime": "2022-02-18T21:28:06.752Z"
+  "dateTime": "2022-02-18T21:35:39.270Z"
 }
