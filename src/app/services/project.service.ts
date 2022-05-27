@@ -19,8 +19,8 @@ export class ProjectService {
       imageCaption: "",
       thumbtail: "assets/images/logo_omgevingsloket_circle.png",
       description: [
-        "As a member of the exploitation team, I overlook the whole delivery and quality process. Together with management we set goals, plan them and execute them within the SAFe and Scrum.",
-        "I am help 6 teams, and around 80+ software components to increase quality and build scalable cloud-native applications. The journey so far has involved migrating from Docker Swarm to Kubernetes and Openshift, from Bitbucket+Jenkins to GitLab, architectural refactorings and a lot of modernization.",
+        "As a member of the exploitation team, I overlook the architecture, delivery and quality process. Together with management we set goals, plan them and execute them within SAFe and Scrum.",
+        "I help 6 teams, and around 80+ software components to increase quality and build scalable cloud-native applications. The journey so far has involved migrating from Docker Swarm to Kubernetes and Openshift, from Bitbucket+Jenkins to GitLab, architectural refactorings and a lot of modernization.",
       ],
       roles: ["Technical Lead", "Migration and Integration Architect"],
       activities: [
